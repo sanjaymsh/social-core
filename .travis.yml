@@ -3,9 +3,21 @@ sudo: false
 matrix:
   include:
     - python: 2.7
+      arch: amd64
     - python: 3.5
+      arch: amd64
     - python: 3.6
+      arch: amd64
     - python: 3.7
+      arch: amd64
+    - python: 2.7
+      arch: ppc64le
+    - python: 3.5
+      arch: ppc64le
+    - python: 3.6
+      arch: ppc64le
+    - python: 3.7
+      arch: ppc64le
   fast_finish: true
 addons:
   apt:
